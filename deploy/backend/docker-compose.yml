@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  youtube-downloader-server:
+    image: szantoksz/youtube-downloader-server:v1.0.0
+    container_name: youtube-downloader-server
+    volumes:
+      - ./data:/app/DATA
+      - ./temp:/app/TEMP
+    ports:
+      - 8080:8080
+    restart: unless-stopped

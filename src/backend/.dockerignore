@@ -1,0 +1,4 @@
+TEMP/
+DATA/
+__pycache__/
+*.pyc

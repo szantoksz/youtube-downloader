@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  youtube-downloader-web-client:
+    image: szantoksz/youtube-downloader-web-client:v1.0.0
+    container_name: youtube-downloader-web-client
+    volumes:
+      - ./meta:/usr/share/nginx/html/meta
+    ports:
+      - 80:80
+    restart: unless-stopped

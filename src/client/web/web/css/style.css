@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "Didact Gothic";
+    src: url("../assets/fonts/DidactGothic.ttf") format("truetype");
+}
+
+body {
+    background-color: #222831;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+div#ui_box {
+    background-color: #31363F;
+    width: fit-content;
+    margin: auto;
+}
+
+header {
+    background-color: #31363F;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p {
+    color: #FFF;
+    font-family: "Didact Gothic";
+    margin-left: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+header p#version {
+    margin: 0;
+    margin-right: 30px;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #31363F;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+footer p {
+    color: #FFF;
+    font-family: "Didact Gothic";
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+div#status_components {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+div#status_components p {
+    color: #FFF;
+    font-family: "Didact Gothic";
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    margin-top: 15px;
+}
+
+
+div#status_components div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+div#status_components img#image {
+    width: 80px;
+    height: auto;
+}
+
+div#status_components img#main_image {
+    display: block;
+    width: 80px;
+    height: auto;
+}
+
+div#status_components div#corner_image_wrapper {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #31363F;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+div#status_components img#corner_image {
+    width: 100%;
+    height: 100%;
+}
+
+#dots {
+  animation: blink 1s steps(1, start) infinite;
+}
+
+div#status_components button {
+    background: #222831;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+    height: 33px;
+    width: 90px;
+    color: #FFF;
+    font-size: 15px;
+    outline: none;
+    float: right;
+    margin-top: 6px;
+    cursor: pointer;
+    margin: 0;
+    margin-right: 2rem;
+}
+
+div#status_components button:hover {
+    background: #31363F;
+}
+
+div#status_components button:active {
+    background: #222831;
+}
+
+@keyframes blink {
+  0%, 50% {
+    visibility: visible;
+  }
+  50.01%, 100% {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 600px) {
+    header p {
+        font-size: 16px;
+    }
+
+    div#status_components div {
+        margin-left: 0;
+        margin-right: 3%;
+    }
+
+    div#status_components div#corner_image_wrapper {
+        bottom: 0;
+        left: 52%;
+        right: 0;
+        top: 33rem;
+    }
+
+    div#status_components img#image {
+    width: 60px;
+    height: auto;
+    }
+    div#status_components button {
+        margin-left: 3rem;
+    }
+}

@@ -1,0 +1,72 @@
+div#ui_box {
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 17rem;
+}
+
+img {
+    width: 30rem;
+    height: auto;
+    padding-right: 3rem;
+}
+
+div#row_align {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+h1{
+    color: #EEEEEE;
+    font-family: "Didact Gothic";
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    max-width: 29rem;
+}
+
+p#duration,
+p#job_id {
+    color: #EEEEEE;
+    font-family: "Didact Gothic";
+    margin: 0;
+    margin-top: 5px;
+}
+
+p#job_id {
+    text-align: right;
+}
+
+p#time_left_to_download {
+    color: #EEEEEE;
+    font-family: "Didact Gothic";
+    vertical-align: baseline;
+}
+
+@media (max-width: 600px) {
+    div#ui_box {
+    border-radius: 8px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-direction: column;
+    max-width: 85%;
+    margin-top: 11rem;
+    }
+
+    img {
+        width: 22rem;
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+}
