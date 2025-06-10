@@ -29,7 +29,7 @@
 - Run the ```main.py``` file: ```python main.py```
 
 ### Web Client:
-- Install a servet that runs from the ```web``` server so the index.html file's web path is: ```/pages/index.html```
+- Install a server that runs from the ```web``` server so the index.html file's web path is: ```/pages/index.html```
 
 ---
 
