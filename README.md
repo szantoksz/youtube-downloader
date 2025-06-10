@@ -13,7 +13,7 @@
 - Client: https://hub.docker.com/r/szantoksz/youtube-downloader-web-client
 - Or ```docker load -i``` the ```.tar``` images from the ```builds``` folder
 - There is a deployment guide using ```docker-compose``` in the ```deploy``` folder
-- You may have to manually make config folders in the mounted folders, it will be fixed in the next version.
+- You may have to manually make config files in the mounted folders, it will be fixed in the next version.
 
 ---
 
