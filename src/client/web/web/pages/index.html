@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <meta name="APP" content='{{env "APP"}}' />
+        <meta name="VER" content='{{env "VER"}}' />
+        <meta name="API_URL" content='{{env "API_URL"}}' />
+
+        <title>YouTube Downloader</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/pages/index.css">
+        
+        <script type="module" src="js/pages/index/main.js"></script>
+    </head>
+
+    <body>
+        <div id="header"></div>
+
+        <main>
+            <h1>YouTube Downloader</h1>
+
+            <div id="ui_box">
+                <label for="url" id="url_label">URL:</label><br>
+                <input type="text" id="url", required>
+
+                <div id="row_alignment">
+                    <label for="type" id="type_label">Type:</label><br>
+                    <select name="type" id="type">
+                        <option value="none">None</option>
+                        <option value="video">Video (.mp4)</option>
+                        <option value="audio">Audio (.mp3)</option>
+                    </select>
+
+                    <button id="download">Download</button>
+                </div>
+            </div>
+            <p id="error_message"></p>
+        </main>
+
+        <div id="footer"></div>
+    </body>
+</html>

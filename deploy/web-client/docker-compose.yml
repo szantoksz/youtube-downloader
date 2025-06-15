@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  youtube-downloader-web-client:
+    image: szantoksz/youtube-downloader-web-client:v1.0.1
+    container_name: youtube-downloader-web-client
+    ports:
+      - 80:80
+    environment:
+      - APP=szantokszYtDownloader # optional
+      - VER=1.0.1 # optional
+      - API_URL=YOUR_API_URL # http(s)://<domain/ip>(:port)/api
+    restart: unless-stopped
+
